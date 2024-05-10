@@ -3,8 +3,8 @@
     <img class="line line-1" src="/assets/svg/line-pogruzka-1.svg" alt="SVG фоновая линия">
     <img class="line line-2" src="/assets/svg/line-pogruzka-2.svg" alt="SVG фоновая линия">
     <div class="side-blocks mb-em">
-      <UICart title="Перевозка сборных грузов (группаж)" text="организовываем перевозку груза нескольких компаний скомплектованных на одной машине" />
-      <UICart title="Гарантия сохранности груза" text="страхуем и отслеживаем его местоположение" />
+      <MainAboutCart title="Перевозка сборных грузов (группаж)" text="организовываем перевозку груза нескольких компаний скомплектованных на одной машине" />
+      <MainAboutCart title="Гарантия сохранности груза" text="страхуем и отслеживаем его местоположение" />
     </div>
     <div class="centered-image">
       <div class="circle circle-1"></div>
@@ -14,8 +14,8 @@
       <img src="/img/pogruzka.webp" alt="Изображение погрузки груза">
     </div>
     <div class="side-blocks">
-      <UICart title="Перевозка опасных грузов (ADR)" text="предлагаем вам индивидуальные решения для ваших запросов на транспортировку ADR" />
-      <UICart title="Решаем вопросы по таможенному оформлению" text="Ваш груз пересечет границу с соблюдением всех необходимых формальностей" />
+      <MainAboutCart title="Перевозка опасных грузов (ADR)" text="предлагаем вам индивидуальные решения для ваших запросов на транспортировку ADR" />
+      <MainAboutCart title="Решаем вопросы по таможенному оформлению" text="Ваш груз пересечет границу с соблюдением всех необходимых формальностей" />
     </div>
     <img class="line line-3" src="/assets/svg/line-pogruzka-1.svg" alt="SVG фоновая линия">
     <img class="line line-4" src="/assets/svg/line-pogruzka-2.svg" alt="SVG фоновая линия">

@@ -21,6 +21,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'ru',
       },
+      title: 'Nikas-Trans - Логистическая компания',
       meta: [
         {
           name: 'description',
