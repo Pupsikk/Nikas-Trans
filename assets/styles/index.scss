@@ -1,0 +1,40 @@
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $white;
+  
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+body {
+  background-color: $black;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    color: $yellow;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.8em;
+}
+
+h3 {
+  font-size: 2.2em;
+}
