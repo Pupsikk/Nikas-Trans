@@ -4,7 +4,10 @@
       <div class="input-group">
         <div>
           <p>Страна загрузки</p>
-          <input type="text" v-model="loadingCountry" required placeholder="Молдова" @input="loadingCountry = textFilter(loadingCountry, 20)">
+          <select v-model="loadingCountry" required>
+            <option value="" disabled selected>Выберите страну</option>
+            <option v-for="(country, index) in loadingCountries" :key="index" :value="country">{{ country }}</option>
+          </select>
         </div>
         <div>
           <p>Город загрузки</p>
@@ -12,7 +15,10 @@
         </div>
         <div>
           <p>Страна выгрузки</p>
-          <input type="text" v-model="unloadingCountry" required placeholder="Турция" @input="unloadingCountry = textFilter(unloadingCountry, 20)">
+          <select v-model="unloadingCountry" required>
+            <option value="" disabled selected>Выберите страну</option>
+            <option v-for="(country, index) in unloadingCountries" :key="index" :value="country">{{ country }}</option>
+          </select>
         </div>
         <div>
           <p>Город выгрузки</p>
@@ -78,7 +84,24 @@ export default {
       contactPerson: "",
       contactPhone: "",
       showModal: false,
-      modalMessage: ''
+      modalMessage: '',
+      loadingCountries: [
+        "Австрия", "Азербайджан", "Албания", "Армения", "Белоруссия", "Бельгия", 
+        "Болгария", "В.Британия", "Венгрия", "Германия", "Греция", "Грузия", 
+        "Дания", "Испания", "Италия", "Казахстан", "Латвия", "Литва", "Македония", 
+        "Молдова", "Нидерланды", "Польша", "Португалия", "Россия", "Румыния", 
+        "Сербия", "Словакия", "Словения", "Туркменистан", "Турция", "Узбекистан", 
+        "Украина", "Финляндия", "Франция", "Хорватия", "Чехия", "Швеция", "Эстония"
+      ],
+      unloadingCountries: [
+        "Австрия", "Азербайджан", "Албания", "Армения", "Белоруссия", "Болгария", 
+        "Босния", "В.Британия", "Венгрия", "Германия", "Греция", "Грузия", 
+        "Ирак", "Ирландия", "Испания", "Италия", "Казахстан", "Киргизстан", 
+        "Латвия", "Ливан", "Македония", "Молдова", "Нидерланды", "Польша", 
+        "Россия", "Румыния", "Сербия", "Словакия", "США", "Таджикистан", 
+        "Турция", "Узбекистан", "Украина", "Франция", "Хорватия", "Чехия", 
+        "Швейцария"
+      ],
     };
   },
   methods: {
@@ -191,6 +214,7 @@ export default {
     }
 
     input,
+    select,
     textarea {
       width: 100%;
       border-radius: 14px;
@@ -200,9 +224,14 @@ export default {
     }
 
     input:focus,
+    select:focus,
     textarea:focus {
       outline: none;
-      border: 1px solid $light-gray;
+    }
+
+    select option {
+      color: $black;
+      background-color: $white;
     }
   }
   button {
