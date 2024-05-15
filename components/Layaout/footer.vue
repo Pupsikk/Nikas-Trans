@@ -14,16 +14,21 @@
       </div>
       <div>
         <a href="mailto:nikastrans22@mail.ru">nikastrans22@mail.ru</a>
+        <!-- Социальные сети -->
         <div class="social">
-          <NuxtLink href="/#" target="_blank">
+          <!-- Ссылка на Instagram -->
+          <NuxtLink href="/#" target="_blank"> <!-- внутрь кавычек, вместо "/#" добавляем ссылки. -->
             <img src="/ico/Instagram.png" alt="Instagram ico" />
           </NuxtLink>
+          <!-- Ссылка на WhatsApp -->
           <NuxtLink href="/#" target="_blank">
             <img src="/ico/WhatsApp.png" alt="WhatsApp ico" />
           </NuxtLink>
+          <!-- Ссылка на Viber -->
           <NuxtLink href="/#" target="_blank">
             <img src="/ico/Viber.png" alt="Viber ico" />
           </NuxtLink>
+          <!-- Ссылка на Telegram -->
           <NuxtLink href="/#" target="_blank">
             <img src="/ico/Telegram.png" alt="Telegram ico" />
           </NuxtLink>

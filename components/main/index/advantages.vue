@@ -53,8 +53,6 @@
 
       .box {
         margin-right: 25%;
-        // border: 1px solid red;
-        // max-width: 80%;
       }
       
       .box:nth-child(2) {

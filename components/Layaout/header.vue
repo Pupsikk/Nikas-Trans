@@ -69,7 +69,7 @@ export default {
       ],
       // Номера телефонов
       phoneNumbers: ['+373 604 66 333', '+359 893 51 73 21'],
-      // Социальные ссылки
+      // Социальные ссылки - внутрь кавычек, вместо "/#" добавляем ссылки.
       socialLinks: [
         { url: '/#', icon: '/ico/Instagram.png', alt: 'Instagram ico' },
         { url: '/#', icon: '/ico/WhatsApp.png', alt: 'WhatsApp ico' },
