@@ -3,11 +3,27 @@
     <div class="content">
       <h1>Грузоперевозки по странам <br>Eвропейского союза, СНГ, Балкан, в Турцию</h1>
       <p>безопасная и надежная доставка вашего груза в любую точку с гарантией</p>
-      <UIButton color="white" title="Расчитать стоимость" />
+      <UIButton color="white" title="Рассчитать стоимость" @click="scrollToSection('#request')" />
     </div>
     <MainIndexAdvantages />
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    scrollToSection(target) {
+      const element = document.querySelector(target);
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .container {

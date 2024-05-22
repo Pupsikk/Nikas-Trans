@@ -7,7 +7,7 @@
       <nav class="nav">
         <ul>
           <li v-for="(link, index) in menuLinks" :key="index">
-            <NuxtLink :to="link.url" @click="closeMobileMenu">{{ link.text }}</NuxtLink>
+            <a href="" @click="event => scrollToSection(event, link.url)">{{ link.text }}</a>
           </li>
         </ul>
       </nav>
@@ -34,7 +34,7 @@
       <nav>
         <ul>
           <li v-for="(link, index) in menuLinks" :key="index">
-            <NuxtLink :to="link.url" @click="closeMobileMenu">{{ link.text }}</NuxtLink>
+            <a href="" @click="event => scrollToSection(event, link.url)">{{ link.text }}</a>
           </li>
           <!-- Социальные ссылки в мобильном меню -->
           <li class="social-links">
@@ -63,9 +63,9 @@ export default {
       isMobileMenuOpen: false,
       // Ссылки для основного меню
       menuLinks: [
-        { text: 'О нас', url: '/#about' },
-        { text: 'Услуги', url: '/#uslugi' },
-        { text: 'Оставить заявку', url: '/#request' }
+        { text: 'О нас', url: '#about' },
+        { text: 'Услуги', url: '#uslugi' },
+        { text: 'Оставить заявку', url: '#request' }
       ],
       // Номера телефонов
       phoneNumbers: ['+373 604 66 333', '+359 893 51 73 21'],
@@ -87,10 +87,21 @@ export default {
     closeMobileMenu() {
       this.isMobileMenuOpen = false;
     },
+    // Метод для плавной прокрутки к выбранному блоку
+    scrollToSection(event, target) {
+      event.preventDefault();
+      const element = document.querySelector(target);
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+      this.closeMobileMenu();
+    }
   },
 };
 </script>
-
 
 <style lang="scss" scoped>
 .container {
