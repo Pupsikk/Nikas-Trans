@@ -17,19 +17,19 @@
         <!-- Социальные сети -->
         <div class="social">
           <!-- Ссылка на Instagram -->
-          <NuxtLink href="/#" target="_blank"> <!-- внутрь кавычек, вместо "/#" добавляем ссылки. -->
+          <NuxtLink href="https://www.instagram.com/nikas.trans/" target="_blank"> <!-- внутрь кавычек, вместо "/#" добавляем ссылки. -->
             <img src="/ico/Instagram.png" alt="Instagram ico" />
           </NuxtLink>
           <!-- Ссылка на WhatsApp -->
-          <NuxtLink href="/#" target="_blank">
+          <NuxtLink href="https://wa.me/37360466333?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C,%20%D1%85%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D1%86%D0%B5%D0%BD%D1%83%20" target="_blank">
             <img src="/ico/WhatsApp.png" alt="WhatsApp ico" />
           </NuxtLink>
           <!-- Ссылка на Viber -->
-          <NuxtLink href="/#" target="_blank">
+          <NuxtLink href="https://msng.link/o?37360466333=vi" target="_blank">
             <img src="/ico/Viber.png" alt="Viber ico" />
           </NuxtLink>
           <!-- Ссылка на Telegram -->
-          <NuxtLink href="/#" target="_blank">
+          <NuxtLink href="https://t.me/Alexandr210517" target="_blank">
             <img src="/ico/Telegram.png" alt="Telegram ico" />
           </NuxtLink>
         </div>

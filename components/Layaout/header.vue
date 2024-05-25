@@ -71,10 +71,10 @@ export default {
       phoneNumbers: ['+373 604 66 333', '+359 893 51 73 21'],
       // Социальные ссылки - внутрь кавычек, вместо "/#" добавляем ссылки.
       socialLinks: [
-        { url: '/#', icon: '/ico/Instagram.png', alt: 'Instagram ico' },
-        { url: '/#', icon: '/ico/WhatsApp.png', alt: 'WhatsApp ico' },
-        { url: '/#', icon: '/ico/Viber.png', alt: 'Viber ico' },
-        { url: '/#', icon: '/ico/Telegram.png', alt: 'Telegram ico' }
+        { url: 'https://www.instagram.com/nikas.trans/', icon: '/ico/Instagram.png', alt: 'Instagram ico' },
+        { url: 'https://wa.me/37360466333?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C,%20%D1%85%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D1%86%D0%B5%D0%BD%D1%83%20', icon: '/ico/WhatsApp.png', alt: 'WhatsApp ico' },
+        { url: 'https://msng.link/o?37360466333=vi', icon: '/ico/Viber.png', alt: 'Viber ico' },
+        { url: 'https://t.me/Alexandr210517', icon: '/ico/Telegram.png', alt: 'Telegram ico' }
       ]
     };
   },
